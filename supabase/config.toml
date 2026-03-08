@@ -1,0 +1,10 @@
+project_id = "vcfvbojgbyedswsylmwb"
+
+[functions.ore-comigo]
+verify_jwt = false
+
+[functions.admin-users]
+verify_jwt = false
+
+[functions.bible-chapter]
+verify_jwt = false

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 96%;
+    --foreground: 220 30% 15%;
+
+    --card: 36 33% 97%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 36 33% 97%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 220 60% 25%;
+    --primary-foreground: 36 33% 97%;
+
+    --secondary: 36 40% 90%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 40 50% 55%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 220 60% 25%;
+
+    --radius: 1rem;
+
+    --gold: 40 60% 50%;
+    --gold-light: 40 50% 85%;
+    --deep-blue: 220 60% 25%;
+    --warm-beige: 35 30% 96%;
+    --soft-cream: 36 33% 94%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold) / 0.3));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(180deg, hsl(var(--deep-blue) / 0.8) 0%, hsl(var(--deep-blue) / 0.4) 100%);
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 20px -4px hsl(var(--gold) / 0.15);
+  }
+
+  .shadow-card {
+    box-shadow: 0 2px 12px -2px hsl(var(--foreground) / 0.06);
+  }
+}
+
+
+#lovable-badge {
+  display: none !important;
+}
