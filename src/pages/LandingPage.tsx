@@ -119,12 +119,14 @@ export default function LandingPage() {
           </div>
 
           {/* Pricing CTA */}
-          <button
-            onClick={() => navigate("/auth")}
-            className="bg-accent text-primary-foreground px-8 py-4 rounded-2xl font-bold text-lg shadow-soft hover:opacity-90 transition-all active:scale-95 mb-3"
+          <a
+            href="https://pay.cakto.com.br/39kprw5_797677"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-accent text-primary-foreground px-8 py-4 rounded-2xl font-bold text-lg shadow-soft hover:opacity-90 transition-all active:scale-95 mb-3 inline-block"
           >
             Começar agora — R$ 14,90/mês
-          </button>
+          </a>
           <div className="flex flex-col items-center gap-1">
             <div className="flex items-center gap-2">
               <span className="text-primary-foreground/50 line-through text-sm">R$ 39,90/mês</span>
@@ -301,12 +303,14 @@ export default function LandingPage() {
                 </li>
               ))}
             </ul>
-            <button
-              onClick={() => navigate("/auth")}
-              className="w-full bg-accent text-primary-foreground rounded-xl py-4 font-bold text-sm hover:opacity-90 transition-opacity mb-4"
+            <a
+              href="https://pay.cakto.com.br/39kprw5_797677"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-accent text-primary-foreground rounded-xl py-4 font-bold text-sm hover:opacity-90 transition-opacity mb-4 block text-center"
             >
               Quero começar agora →
-            </button>
+            </a>
 
             {/* 7-day guarantee */}
             <div className="flex items-center gap-3 bg-green-500/10 border border-green-500/25 rounded-xl px-4 py-3 mb-3">
@@ -332,12 +336,14 @@ export default function LandingPage() {
           <p className="text-muted-foreground text-sm mb-6">
             Comece hoje mesmo sua jornada espiritual com o app que vai transformar sua vida de fé.
           </p>
-          <button
-            onClick={() => navigate("/auth")}
-            className="w-full bg-accent text-primary-foreground rounded-2xl py-4 font-bold text-base hover:opacity-90 transition-all active:scale-95 mb-3"
+          <a
+            href="https://pay.cakto.com.br/39kprw5_797677"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-accent text-primary-foreground rounded-2xl py-4 font-bold text-base hover:opacity-90 transition-all active:scale-95 mb-3 block text-center"
           >
             Começar agora por R$ 14,90/mês
-          </button>
+          </a>
           <p className="text-muted-foreground text-xs">De <span className="line-through">R$ 39,90</span> — por tempo limitado</p>
         </div>
       </section>
