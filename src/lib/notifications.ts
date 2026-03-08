@@ -50,10 +50,9 @@ async function showNotification() {
       body: msg,
       icon: "/logo.png",
       badge: "/logo.png",
-      vibrate: [200, 100, 200] as any,
       tag: "alianca-daily",
       data: { url: "/" },
-    });
+    } as NotificationOptions & { badge: string });
   } else {
     // Fallback for browsers without SW support
     new Notification(title, {
